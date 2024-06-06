@@ -164,6 +164,7 @@ public class SystemWebViewEngine implements CordovaWebViewEngine {
             //but we allow this for compatibility reasons
             LOG.d(TAG, "Enabled insecure file access");
             settings.setAllowFileAccess(true);
+            settings.setAllowFileAccessFromFileURLs(true);
             settings.setAllowUniversalAccessFromFileURLs(true);
             cookieManager.setAcceptFileSchemeCookies();
         }
